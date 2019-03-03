@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>ExprParser</title><link href="ocean.css" rel="stylesheet" type="text/css" title="Ocean" /><script src="haddock-util.js" type="text/javascript"></script><script type="text/javascript">//<![CDATA[
+window.onload = function () {pageLoad();setSynopsis("mini_ExprParser.html");};
+//]]>
+</script></head><body><div id="package-header"><ul class="links" id="page-menu"><li><a href="index.html">Contents</a></li><li><a href="doc-index.html">Index</a></li></ul><p class="caption empty">&nbsp;</p></div><div id="content"><div id="module-header"><table class="info"><tr><th>Copyright</th><td>(c) Akram Elwazani @2018</td></tr><tr><th>License</th><td>WTFPL</td></tr><tr><th>Maintainer</th><td>elwazana@mcmaster.ca</td></tr><tr><th>Stability</th><td>experimental</td></tr><tr><th>Portability</th><td>POSIX</td></tr><tr><th>Safe Haskell</th><td>Safe</td></tr></table><p class="caption">ExprParser</p></div><div id="description"><p class="caption">Description</p><div class="doc"><p>Depend : This module depends on the <a href="ExprType.html">ExprType</a> module</p></div></div><div id="synopsis"><p id="control.syn" class="caption expander" onclick="toggleSection('syn')">Synopsis</p><ul id="section.syn" class="hide" onclick="toggleSection('syn')"><li class="src short"><a href="#v:parseExprD">parseExprD</a> :: String -&gt; <a href="ExprType.html#t:Expr">Expr</a> Double</li><li class="src short"><a href="#v:parseExprF">parseExprF</a> :: String -&gt; <a href="ExprType.html#t:Expr">Expr</a> Float</li></ul></div><div id="interface"><h1>Documentation</h1><div class="top"><p class="src"><a name="v:parseExprD" class="def">parseExprD</a> :: String -&gt; <a href="ExprType.html#t:Expr">Expr</a> Double</p><div class="doc"><p>parseExprD
+ - --------------------------------------------
+ - Parses a given string into an expression with
+ - the <code><a href="ExprType.html#t:Expr">Expr</a></code> datatype, of the type Expr Double
+ -      Instructions :
+ -          * Only takes binary constructors from the <code><a href="ExprType.html#t:Expr">Expr</a></code> datataype
+ -            (Add &quot;+&quot;, Mult &quot;*&quot;, Division &quot;/&quot;, Expo &quot;**&quot;)
+ -          * For subtractions appropraite notation is 
+ -            parseExprD &quot;num1 + -num2&quot; 
+ -            (ie use &quot;+&quot; and just add a &quot;-&quot; infront of the number 
+ -             your subtracting by)</p></div></div><div class="top"><p class="src"><a name="v:parseExprF" class="def">parseExprF</a> :: String -&gt; <a href="ExprType.html#t:Expr">Expr</a> Float</p><div class="doc"><p>parseExprF
+ - --------------------------------------------
+ - Parses a given string into an expression with
+ - the <code><a href="ExprType.html#t:Expr">Expr</a></code> datatype, of the type Expr Float
+ -      Instructions :
+ -          * Only takes binary constructors from the <code><a href="ExprType.html#t:Expr">Expr</a></code> datataype
+ -            (Add &quot;+&quot;, Mult &quot;*&quot;, Division &quot;/&quot;, Expo &quot;**&quot;)
+ -          * For subtractions appropraite notation is 
+ -            parseExprF &quot;num1 + -num2&quot; 
+ -            (ie use &quot;+&quot; and just add a &quot;-&quot; infront of the number 
+ -             your subtracting by)</p></div></div></div></div><div id="footer"><p>Produced by <a href="http://www.haskell.org/haddock/">Haddock</a> version 2.16.1</p></div></body></html>
